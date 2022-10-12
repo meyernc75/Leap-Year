@@ -1,0 +1,17 @@
+#Leap year check
+year = int(input("Which year do you want to check? "))
+
+first_cond = year % 4
+second_cond = year % 100
+third_cond = year % 400
+
+if first_cond == 0:
+    if second_cond == 0:
+        if third_cond == 0:
+            print("Leap year.")
+        else:
+            print("Not leap year.")
+    else:
+        print("Leap year.")    
+else:
+    print("Not leap year.")
